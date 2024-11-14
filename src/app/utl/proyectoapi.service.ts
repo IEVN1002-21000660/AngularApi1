@@ -1,3 +1,14 @@
+/* import { Injectable } from '@angular/core';
+
+@Injectable({
+  providedIn: 'root'
+})
+export class ProyectoapiService {
+
+  constructor() { }
+}
+ */
+
 import { HttpClient} from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { AlumnosUtl } from './alumnos';

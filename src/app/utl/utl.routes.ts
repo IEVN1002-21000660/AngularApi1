@@ -1,8 +1,19 @@
-import { LOCATION_UPGRADE_CONFIGURATION } from "@angular/common/upgrade";
 import { Routes } from "@angular/router";
 export default[
     {
-        path:'listaalumnos',
-        loadComponent:()=>('./alumnos/alumnos.component')
+        path: 'listaalumnos',
+        loadComponent: ()=>import('./alumnos/alumnos.component')
+    },
+    {
+        path: 'agregar',
+        loadComponent: ()=>import('./agregar/agregar.component')
+    },
+    {
+        path: 'eliminar/:matricula',
+        loadComponent: ()=>import('./eliminar/eliminar.component')
+    },
+    {
+        path: 'editar/:matricula',
+        loadComponent: ()=>import('./editar/editar.component')
     }
 ]

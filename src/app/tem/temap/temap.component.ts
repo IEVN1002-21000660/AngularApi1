@@ -9,10 +9,9 @@ import { TemahComponent } from "../temah/temah.component";
   styles: ``
 })
 export class TemapComponent {
-  title = 'Deste el padre'
-  mensaje2 : string = "";
-
-  recibiMensaje(mensaje : string){
+  title = 'Desde el padre';
+  mensaje2:string = "";
+  recibirMensaje(mensaje:string){
     this.mensaje2 = mensaje;
   }
 }

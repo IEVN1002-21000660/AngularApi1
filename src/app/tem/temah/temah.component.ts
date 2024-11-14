@@ -15,4 +15,5 @@ export class TemahComponent {
   enviarMensaje(){
     this.mensaje2.emit('Hola desde el hijo');
   }
+
 }
